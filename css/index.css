@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family:'Josefin Sans', sans-serif;
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+.nav-link{
+    color: black;
+    transition: all 0.3s linear;
+}
+.nav-link:hover{
+    color: #5C7065;
+    text-decoration: underline;
+}
+
+.navbar-nav{
+    margin-right: 80px;
+    font-family:'Josefin Sans', sans-serif;
+    color: black;
+    font-size: 20px;
+
+}
+
+.navbar-brand{
+    font-family:'Noto Serif Display', serif;
+    font-weight: 300;
+    letter-spacing: 15px;
+    font-size: 50px;
+    margin-top: 40px;
+    margin-left: 80px;
+
+}
+
+
+.bg-body-tertiary {
+    background-color:transparent !important;
+}
+
+.bg-img{
+    background-image: 
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0) , rgba(117, 19, 93, 0)),
+    url(../imagenes/5.webp);
+    min-height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background: linear-gradient(white, none);
+
+}
+.bg-img-historia{
+    background-image: 
+    linear-gradient(to bottom, rgba(245, 246, 252, 0),rgba(245, 246, 252, 0.52) , rgba(117, 19, 93, 0)),
+    url(../imagenes/15.jpeg);
+    min-height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background: linear-gradient(white, none);
+
+}
+
+.impresionismo{
+    color: white;
+}
+
+.almendro{
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+
+}
+
+.intro{
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    padding: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+
+.botonDestacadas{
+    margin-left: 7.5%;
+    margin-top: 30%;
+    border: none;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 25px;
+    font-weight:600 ;
+    color: white;
+}.botonDestacadas:hover{
+    color: #000000;
+}
+
+/* FOOTER */
+
+.bg-img-2{
+    background-image: url(../imagenes/20.jpg);
+    min-height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background: linear-gradient(white, none);
+margin-top: 80px;
+}
+
+.postFooter{
+font-size: 35px;
+font-weight: 800;
+letter-spacing: 4px;
+display: inline-block;
+}
+
+.impresionismoFoot{
+    color: white;
+}
+
+
+.svg{
+float: right;
+margin-top: 7%;
+margin-right: 6%;
+}
+
+/* SLIDER */
+.card-image1{
+    position:relative;
+    height: 450px;
+    width: 315px;
+    overflow: hidden;
+
+
+}
+
+.card-image1 .card-img1{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.card-img1{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: all 0.2s linear ;
+}
+
+.card-img1:hover{
+    filter: none;
+    -webkit-filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.card-content{
+    padding: 20px;
+    display: flex;
+    flex-direction:column;  
+}
+
+.card{
+    display: inline-block;
+    --bs-card-border-width: 0;
+}
+
+.name{
+    font-size: 20px;
+}
+
+.slide-container{
+    justify-content: center;
+    display: flex;
+    margin-top: 80px;
+}
+
+
+.image-container-historia{
+    position:relative;
+    height: 900px;
+    width: 500px;
+    padding: 80px;
+}
+
+.image-container, .image-historia{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.text-hist{
+margin-top: 40px;
+}
+
+.par-hist{
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+}
+
+.par-hist-2 {
+font-weight: 300;
+font-size: 16px;
+letter-spacing: 1.5px;
+padding: 10px;
+margin-left: 80px;
+margin-right: 80px;
+}
+.container-hist{
+    margin-left: 0 !important;
+}
+
+.chaumes{
+    position:relative;
+    max-height: 300px;
+    width: 1000px;
+    padding: 80px;
+    padding-top: 20px;
+
+}
+.image-container-chaumes, .chaumes{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    border-radius: 0;
+}
+
+.title-chaumes{
+    margin-left: 80px;
+}
+
+/* ARTISTAS */
+
+.firma{
+    position:relative;
+    max-height: 300px;
+    width: 700px;
+    padding: 80px;
+    padding-top: 20px;
+
+}
+
+.gaugin{
+object-position: left;
+}
+
+.firmaLautrec{
+    position:relative;
+    max-height: 400px;
+    width: 400px;
+    padding: 80px;
+    padding-top: 20px;
+
+}
+
+.image-container-firmas{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    border-radius: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-artistas{
+    background-image: url(../imagenes/Poster-for-Manet-and-the-Post-Impressionists.jpg);
+}
+
+
+
+.bg-img-artistas{
+    background-image: 
+    linear-gradient(to bottom, rgba(245, 246, 252, 0),rgba(245, 246, 252, 0.52) , rgba(117, 19, 93, 0)),
+    url(../imagenes/10.jpeg);
+    min-height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background: linear-gradient(white, none);
+margin-bottom: 80px;
+}
+
+.img-artistas{
+width: 500px;
+height: 700px;
+object-fit: cover;
+object-position: left;
+padding: 2px;
+display: block;
+}
+
+.container-artistas{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.cont-img-art{
+    position: relative;
+}
+
+.image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.184);
+    font-size: 40px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.image-overlay:hover{
+    opacity: 1;
+}
+
+.bg-img-2-artistas{
+    background-image: url(../imagenes/20.jpg);
+    min-height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background: linear-gradient(white, none);
+  margin-top: 80px;
+}
+
+.footer-artistas{
+    margin-top: 80px;
+}
+
+/* CONTACTO */
+
+.form-label-1{
+    display: flex;
+align-items:flex-start;
+font-weight: 300;
+letter-spacing: 5px;
+}
+
+.col-form{
+    margin-top:80px;
+}
+
+.mensaje{
+    font-weight: 300;
+    font-size: 70px;
+    text-align: left;
+    letter-spacing: 15px;
+
+}
+
+.bg-img-contacto{
+    background-image: 
+    linear-gradient(to bottom, rgba(245, 246, 252, 0),rgba(245, 246, 252, 0.52) , rgba(117, 19, 93, 0)),
+url(../imagenes/13.webp);
+    min-height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background: linear-gradient(white, none);
+
+}
+
+
+.btn-primary {
+    --bs-btn-color: rgb(0, 0, 0);
+    --bs-btn-bg: #0d6dfd00;
+    --bs-btn-border-color: #d7d7d7;
+    font-weight: 300;
+letter-spacing: 5px;
+}
+
+.boton-enviar{
+    display: flex;
+    align-items: flex-start;
+}
+.btn-primary:hover {
+    background-color: #5C7065;
+    --bs-btn-hover-border-color: #5C7065;
+    --bs-btn-hover-bg: #5C7065;
+    --bs-btn-active-bg: #5C7065;
+    --bs-btn-active-border-color: #5C7065;
+
+
+}
+
+
+
+/* OBRASDESTACADAS */
+
+.obrasDestacadas{
+    overflow: hidden;
+}
+
+.containerGallery{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    width: 1000px;
+    height: 600px;
+    padding: 50px;
+    background-color: #f5f5f5f5;
+    box-shadow: 0 30px 50px #3e3e3e;
+  
+}
+
+#slide{
+    width: max-content;
+    margin-top: 50px;
+}
+.itemGallery{
+    width: 200px;
+    height: 300px;
+    background-position: 50% 50%;
+    display: inline-block;
+    transition: 0.5s;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+    box-shadow: 0 30px 50px rgb(143, 143, 143);
+}
+
+.itemGallery:nth-child(1),
+.itemGallery:nth-child(2){
+    left: 0;
+    top: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+}
+
+.itemGallery:nth-child(3){
+    left: 60%;
+opacity: 0;
+}
+
+
+.itemGallery:nth-child(4){
+    left:calc(60% + 100px);
+    opacity: 0;
+}
+
+.itemGallery:nth-child(5){
+    left:calc(60% + 200px);
+    opacity: 0;
+}
+
+.itemGallery:nth-child(n+6){
+    left:calc(60% + 300px);
+    opacity: 0;
+}
+
+.itemGallery .contentGallery{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 300px;
+    text-align: left;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    transform: translate(0, -50%);
+    display: none;
+}
+
+.itemGallery:nth-child(2) .contentGallery{
+    display: block;
+    z-index: 11111;
+}
+
+.itemGallery .nameGallery{
+    font-size: 40px;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 1 forwards;
+}
+
+.itemGallery .des{
+    margin: 20px 0 ;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 0.3s 1 forwards;
+
+}
+
+.itemGallery button{
+    padding:10px 20px;
+    border: none;
+    opacity: 0 ;
+    animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+
+}
+
+.espiritu{
+    color: black;
+}
+
+@keyframes showcontent{
+    from{
+        opacity: 0;
+        transform: translate(0,100px);
+        filter: blur(33px);
+    }to{
+        opacity: 1;
+        transform: translate(0,0);
+        filter: blur(0 );
+    }
+}
+
+@keyframes showNext{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.buttonsGallery{
+    position: absolute;
+    bottom: 30px;
+     z-index: 222222;
+     text-align: center;
+    width: 100%;
+    left: -0%;
+}
+
+.buttonsGallery button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    transition: 0.5s;
+}.buttonsGallery button:hover{
+    background-color: #5C7065;
+}
+
+.botonHome {
+    position: absolute;
+    z-index: 1;
+    top: 3rem;
+    left: 5rem;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    font-size: 20px;
+    color: white;
+}
+
+.bodyDestacadas{
+    background-color: #000000;
+}
+
+
+/* OBRAS */
+
+.bodyObras{
+    background-color: #000000;
+}
+
+.row{
+    --bs-gutter-x: 0.5rem;
+    padding: 0.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 0.5rem !important;
+}
+
+.h1Obras{
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 200;
+    color: white;
+}
+
+.h1Obras span{
+    font-weight: bolder;
+}
+
+.bg-img-obras{
+    background-image: 
+    linear-gradient(to bottom, rgba(245, 246, 252, 0),rgba(245, 246, 252, 0.52) , rgba(117, 19, 93, 0)),
+    url(../imagenes/9.jpeg);
+    min-height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background: linear-gradient(white, none);
+margin-bottom: 80px;
+}
+
+
+/* SEARCH BAR */
+
