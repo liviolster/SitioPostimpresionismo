@@ -11,9 +11,8 @@
 
 </head>
   <body>
-    <main class="bg-artistas">
 <!-- NAV -->
-<div class="bg-img-artistas">
+<div class="bg-img-contacto">
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="../index.html"> Post <br> <p class="impresionismo"> Impresionismo </p></a>
@@ -26,7 +25,7 @@
             <a class="nav-link" href="./historia.html">historia</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">artistas</a>
+            <a class="nav-link" href="./artistas.html">artistas</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./obras.html">obras</a>
@@ -38,7 +37,7 @@
             <a class="nav-link" href="./contacto.html">contacto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./formRegistro.html">registrate</a>
+          <a class="nav-link" href="./formRegistro.html">registrate</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./formLogin.html"><span class="material-symbols-outlined">
@@ -53,59 +52,54 @@
 
 <!-- MAIN -->
 
-<div class="formBuscar">
-<form action="resultados_buscar.php" method="post" style="margin-bottom: 40px">
-  <label class="formBuscar" style="font-weight: 300; letter-spacing:5px; color: white;">Buscar artistas
-  <input type="search" name="buscar" required placeholder="Buscar..." style="border-radius: var(--bs-border-radius);font-weight: 300; letter-spacing:5px; border-color: white;"/>
-  <input class="formArtistas" type="submit" value="Enviar" style="background-color: #00000000; border-radius: var(--bs-border-radius);font-weight: 300; letter-spacing:5px; color: white; border-color: white; ">
-  </label>
-  </form>
-</div>
+<div class="container text-center col-form">
 
-<div class="container-artistas">
-<div class="cont-img-art">
-  <img class="img-artistas" src="../imagenes/24.jpg" alt="">
-  <a href="./vanGogh.html"><div class="image-overlay">
-    <div>Vincent van Gogh</div>
+      <div class="mensaje">
+        ¡GRACIAS!
+      </div>
+
     </div>
-  </a>
-</div>
-<div class="cont-img-art">
-  <img class="img-artistas" src="../imagenes/25.jpg" alt="">
-  <a href="./paulGauguin.html"><div class="image-overlay">
-    <div class="img-tit">Paul Gauguin</div>
-    </div>
-  </a>
-</div>
-<div class="cont-img-art">
-  <img class="img-artistas" src="../imagenes/26.jpg" alt="">
-  <a href="./paulCezanne.html"><div class="image-overlay">
-    <div class="img-tit">Paul Cézanne</div>
-    </div>
-  </a>
-</div>
-<div class="cont-img-art">
-  <img class="img-artistas" src="../imagenes/27.jpg" alt="">
-  <a href="./toulouseLautrec.html"><div class="image-overlay">
-    <div class="img-tit">Toulouse-Lautrec</div>
-    </div>
-  </a>
-</div>
-
-</div>
 
 
-<!-- FOOTER -->
-<div class="bg-img-2-artistas">
-<footer class="footer-artistas">
+<?php
 
+//se arma el array POST
+$nombre=$_POST['nombre'];
+$mail=$_POST['mail'];
+$comentario=$_POST["mensaje"];
+
+$destino="mail@mail.com,mail2@mail.com";
+$asunto="Contacto desde el sitio";
+$mensaje="Nombre: ".$nombre." Email: ".$mail." Mensaje: ".$comentario;
+
+$header="From: ".$nombre."<".$mail.">";
+
+$enviado = mail($destino,$asunto,$mensaje,$header);
+
+if($enviado == true){
+	echo "Su correo ha sido enviado.";
+}else{
+	echo "Hubo un error en el envio del mail.";
+}
+
+include('conexion.php');
+
+
+// $consulta=mysqli_query($conexion, "INSERT INTO contactos VALUES ('','$nombre','$mail','$localidad','$comentario')");
+
+$consulta = mysqli_query($conexion, "INSERT INTO contactos (nombre, mail, mensaje)VALUES ( '$nombre','$mail', '$comentario')") or die(mysqli_error($conexion));
+
+
+
+?>
+<footer>
+    <div class="bg-img-2">
         <a class="navbar-brand postFooter" href="#"> Post <br> <p class="impresionismoFoot"> Impresionismo </p></a>
 <a href="https://www.instagram.com/post_impressionism_artists/?hl=en" target="_blank"> <img class="svg" src="../imagenes/instagram.svg" alt=""></a>
 <a href="https://pin.it/4n1bxn0" target="_blank"> <img class="svg" src="../imagenes/pinterest.svg" alt=""></a>
 
+    </div>
 </footer>
-</div>
-</main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   
     <script src="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.js"></script>

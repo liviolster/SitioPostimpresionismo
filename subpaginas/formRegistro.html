@@ -11,9 +11,8 @@
 
 </head>
   <body>
-    <main>
 <!-- NAV -->
-<div class="bg-img-artistas">
+<div class="bg-img-reg">
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="../index.html"> Post <br> <p class="impresionismo"> Impresionismo </p></a>
@@ -51,69 +50,43 @@
   </nav>
 </div>
 
-<!-- MAIN -->
 
-<ul class="nav justify-content-center">
-  <li class="nav-item">
-    <a class="nav-link" href="./paulGauguin.html">Paul Gauguin</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./paulCezanne.html">Paul Cézanne</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./toulouseLautrec.html">Toulouse-Lautrec</a>
-  </li>
-</ul>
+<div class="containerSesion">
+	<h2 class="mensaje">Registrate al sitio</h2>
+    <form action="registro.php" method="post" >
+    	<label class="form-label-2"> Nombre de usuario</label>
+        <input type="text" name="name" class="form-control" id="exampleFormControlInput1" required>
+        <br />
+		<label class="form-label-2">Email</label>
+            <input type="email" name="mail" class="form-control" id="exampleFormControlInput1" required>
+        <br />
+        <label class="form-label-2">Contraseña</label>
+        <input type="password" name="clave" maxlength="12" class="form-control" id="exampleFormControlInput1" required>
+    <br>
+        <label class="form-label-2">Nombre</label>
+            <input type="text" name="nombre" maxlength="12" class="form-control" id="exampleFormControlInput1" required>
+        <br />
+        <label class="form-label-2">Apellido</label>
+            <input type="text" name="apellido" maxlength="12" class="form-control" id="exampleFormControlInput1" required>
+        <br />
+            <label class="form-label-2 infoMail"></label>
+            <input name="newsletter" type="checkbox" value="si" checked="checked" /> Sí, deseo recibir informacion por mail.
+        <br />
 
-<div class="container container-hist">
-    <div class="row">
-        <div class="image-container-historia">
-        <img class="image-historia" src="../imagenes/vangoghmuseum-s0016V1962-800.jpg" class="imgArticle">
-    </div>
-      <div class="col text-hist">
-        <h1 class="text-hist">Vincent Willem van Gogh</h1>
-        <h4>1853 - 1890</h4>
-        <h4>Paises Bajos</h4>
-        <p class="par-hist">Vincent van Gogh fue un influyente pintor postimpresionista nacido el 30 de
-            marzo de 1853 en Zundert, Países Bajos, y fallecido el 29 de julio de 1890 en
-            Auvers-sur-Oise, Francia. Su vida y obra se han convertido en un ícono de la historia del
-            arte, aunque no alcanzó el reconocimiento durante su vida.
-            Van Gogh provenía de una familia dedicada a la religión y la educación. A lo largo
-            de su vida, luchó con problemas emocionales y mentales, lo que contribuyó a su turbulenta
-            historia. Trabajó en varias ocupaciones antes de dedicarse seriamente a la pintura
-            en la década de 1880.
-            Su estilo artístico se caracterizó por pinceladas audaces y colores vibrantes, que
-            buscaban expresar emociones y sensaciones más allá de la mera representación realista.
-            A pesar de que su trabajo no fue ampliamente apreciado en su tiempo, su influencia
-            posterior en la pintura moderna y su contribución al arte son incalculables.
-            A medida que su salud mental empeoró, van Gogh se internó en un hospital psiquiátrico
-            en Saint-Rémy-de-Provence, donde continuó pintando. Trasladado a
-            Auvers-sur-Oise, siguió creando pero finalmente se suicidó a los 37 años.
-            El reconocimiento de la genialidad de Vincent van Gogh creció significativamente
-            después de su muerte. Sus pinturas se encuentran ahora en museos y colecciones de
-            todo el mundo, y su vida ha inspirado películas, libros y obras de teatro. Su capacidad
-            para transmitir emociones a través de su arte y su enfoque único en el color y la forma lo
-            han convertido en un artista icónico y eterno.
-        </p>
+    <div class="boton-enviar">
+        <input type="submit" value="Registrarse" class="btn btn-primary mb-3"></input>
       </div>
-    </div>
-  </div>
+    </form>
+</div>
 
-  <div class="image-container-firmas">
-    <img class="firma" src="../imagenes/VINCENT.png" alt="">
-   </div>
-
-<!-- FOOTER -->
-<div class="bg-img-2-artistas">
-    <footer class="footer-artistas">
-    
+    <footer>
+        <div class="bg-img-2">
             <a class="navbar-brand postFooter" href="#"> Post <br> <p class="impresionismoFoot"> Impresionismo </p></a>
     <a href="https://www.instagram.com/post_impressionism_artists/?hl=en" target="_blank"> <img class="svg" src="../imagenes/instagram.svg" alt=""></a>
     <a href="https://pin.it/4n1bxn0" target="_blank"> <img class="svg" src="../imagenes/pinterest.svg" alt=""></a>
     
+        </div>
     </footer>
-    </div>
-    </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.js"></script>
